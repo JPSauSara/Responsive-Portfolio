@@ -2,68 +2,69 @@
 <html>
 
 <head>
-	<title>J.Saucedo</title>
+	<title>About | J.Saucedo</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
 </head>
 
 <body>
 
-	<header>
-		<h1>Julia P. Saucedo</h1>
-	
-		<ul id="links">
-			<li><a href="Contact.html">Contact</a></li>
-			<li><a href="Portfolio.html">Portfolio</a></li>
-			<li><a href="index.html">About</a></li>
-		</ul>
+	<header id="topline">
+		<div class="container">
+		<a href="index.html" id="logo">Julia P. Saucedo</a>
+		<nav>
+			<a href="index.html">About</a>
+			<a href="Portfolio.html" class="left-border">Portfolio</a>
+			<a href="Contact.html" class="left-border">Contact</a>
+		</nav>
+		</div>
 	</header>
 	
-	<section id="main-content">
-			<h2>Contact</h2>
-			<!-- <h4 id="name">Name</h4>
-			<h4 id="email">Email</h4>
-			<h4 id="msg">Message</h4> -->
-			<form action="action_page.php">
-				Name<br>
-				<input type="text" name="Name"><br>
-				Email<br>
-				<input type="text" name="Email"><br>
-				Message<br>
-				<input type="text" name="Message"><br>
+	
+	<div id="main-container" class="container">
+		<section class="main-section">
+			<h1>Contact</h1>
+
+			<form id="contact-form">
+				<ul>
+					<li>
+						<label for="name">Name</label>
+						<input type="text" id="name" name="name" placeholder="John Smith" required="required">
+					</li>
+		
+					<li>
+					<label for="email">Email</label>
+					<input type="text" id="email" name="email" placeholder="example@gmail.com" required="required">
+					</li>
+					<li>
+					<lable for="message">Message</lable>
+					<textarea name="message" required="required"></textarea>
+					</li>
+				</ul>	
 				<input type="submit" value="Submit">
-			</form>
-	</section>
+				</form>
+		</section>
+	
+		<section class="sidebar"> 
+				<h2>Connect With Me</h2>
 
-	<aside id="sidebar"> 
-			<h3>Connect With Me</h3>
+				<a href="https://github.com/JPSauSara">
+					<img src="assets/images/github.png" class="social" alt="GitHub" /></a>
 
-			<a href="https://github.com/JPSauSara">
-				<img src="assets/images/github.png"
-				style="width: 40px;height: 40px">
-			</a>
+				<a href="https://www.linkedin.com/in/juliasaucedo/">
+					<img src="assets/images/linkedin.png" class="social" alt="LinkedIn"></a>
 
-			<a href="https://www.linkedin.com/in/juliasaucedo/">
-				<img src="assets/images/linkedin.png"
-				style="width: 40px;height: 40px">
-			</a>
+				<a href="http://stackoverflow.com/users/7477244/j-saucedo">
+					<img src="assets/images/stacko.png" class="social" alt="Stack Overflow"></a>
+		</section>
+	</div>
 
-			<a href="http://stackoverflow.com/users/7477244/j-saucedo">
-				<img src="assets/images/stacko.png"
-				style="width: 40px;height: 40px">
-			</a>
-
-	</aside>
-
-	<footer>
-		© Copyright 2017 Julia Saucedo
+	<footer> 
+		<div class="container">
+			© Copyright 2017 Julia Saucedo
+		</div>
 	</footer>
 
 </body>
-
-<!-- <footer>
-		© Copyright 2017 Julia Saucedo
-	</footer> -->
 
 </html>

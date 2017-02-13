@@ -25,6 +25,12 @@ p:last-child {
 	margin-bottom: 0
 }
 
+h1, h2 {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	color: #4aaaa5;
+	font-weight: 700;
+}
+
 h1 {
 	padding-bottom: 20px;
 	font-size: 30px;
@@ -99,6 +105,10 @@ footer {
 }
 .sidebar h2 {
 	padding-bottom: 20px;
+	margin-bottom: 15px;
+	line-height: 22px;
+	border-bottom: 2px solid #eeeeee;
+	font-size: 22px;
 }
 
 #headshot{
@@ -130,6 +140,50 @@ footer {
 #main-container {
 	padding-top: 130px;
 }
+
+/*contact form*/
+
+#contact-form ul {
+	margin-bottom: 20px;
+}
+
+#contact-form li {
+	margin-bottom: 10px;
+}
+
+label, input[type=text], textarea {
+	width: 100%;
+	display: block;
+}
+
+input[type=text],
+textarea {
+	height: 35px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 10px;
+	padding-right: 10;
+	font-size: 14px;
+	border: 1px solid #dddddd;
+}
+
+textarea {
+	height: 200px;
+
+}
+
+input[type=submit] {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 30px;
+	padding-left: 30px;
+	background: #4aaaa5;
+	color: #ffffff;
+	font-size: 18px;
+	cursor: pointer;
+	border: 0 none; 
+}
+
 
 
 
