@@ -49,7 +49,7 @@ h3 {
 }
 
 .topline {
-	position: fixed;
+	position: absolute;
 	z-index: 99;
 	margin: 0 0 30px;
 	margin-top: 0;
@@ -147,6 +147,7 @@ footer {
 .main-container {
 	padding-top: 130px;
 	margin: 10px 30px;
+	clear: both;
 }
 
 .main-section {
@@ -251,54 +252,35 @@ input[type=submit] {
 }
 
 /*width at 980px and below*/
-/*@media only screen and (max-width: 980px) {*/
+@media only screen and (max-width: 980px) {
    
-   /*.container {
-	clear: both;
-	max-width: 980px;
-	width: 100%;
-	margin:0 auto;
-	}
-
-   .logo {
-   	margin-left: 100px;
-   }
-    nav {
-	margin-right: 150px;
-    }
-	
-    .main-container {
-        max-width: 980px;
-        clear: both;
-        width:100%;
-        margin-left: 100px;
-        padding-top: 100px;
-    }
-	
 	.main-section{
 		max-width: 400px;
 		overflow: auto;
-		margin-left: 50px;
+		margin-left: 55px;
+		border:none;
 	}
 
 	.auth-image {
-	width: 300px;
-	height: auto;
-	margin-top: 10px;
-	position: center;
-	float: left;
-	}
+		width: 335px;
+		margin: 0 auto;
+		margin-bottom: 30px;
+		}
 
+	.topline {
+		padding-left: 85px;
+		padding-right: 85px;
+		top: 0;
+	}
 	.sidebar {
-	float: left;
-	padding: 30px;
-	max-width: 270px;
-	width: 100%;
-	float: right;
-	margin-bottom: 20px;
-	margin-right: 200px;
-   	}*/
-/*}*/
+		border:none;
+		margin-right: 55px;
+   	}
+   	.work {
+   		left: 45px;
+
+   	}
+}
 
 /*width at 768px and below*/
 
