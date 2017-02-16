@@ -12,7 +12,7 @@ box-sizing: border-box;
 
 .container {
 	clear: both;
-	max-width: 960px;
+	width: 960px;
 	width: 100%;
 	margin:0 auto;
 	}
@@ -126,7 +126,7 @@ footer {
 }
 
 .auth-image {
-	width: 200px;
+	width: 350px;
 	height: auto;
 	margin-top: 10px;
 	margin-right: 25px;
@@ -212,7 +212,6 @@ input[type=submit] {
 /*portfolio page*/
 
 .work {
-	max-width: 274px;
 	overflow: auto;
 	position: relative;
 	float: left;
@@ -251,9 +250,18 @@ input[type=submit] {
 	/*border-bottom: 2px solid #eeeeee;*/
 }
 
+
+
 /*width at 980px and below*/
-@media only screen and (max-width: 980px) {
-   
+@media only screen and (min-width: 769px) and (max-width: 980px) {
+  
+  .topline {
+		padding-left: 85px;
+		padding-right: 85px;
+		margin:0 auto;
+		top:0;
+	}
+
 	.main-section{
 		max-width: 400px;
 		overflow: auto;
@@ -262,28 +270,65 @@ input[type=submit] {
 	}
 
 	.auth-image {
-		width: 335px;
+		max-width: 340px;
+		/*max-width: 100%;*/
 		margin: 0 auto;
-		margin-bottom: 30px;
 		}
 
-	.topline {
-		padding-left: 85px;
-		padding-right: 85px;
-		top: 0;
-	}
 	.sidebar {
 		border:none;
 		margin-right: 55px;
    	}
-   	.work {
-   		left: 45px;
-
-   	}
+   	/*.work {
+		clear: both;
+		max-width: 300px;
+   	}*/	
 }
 
 /*width at 768px and below*/
+@media only screen and (min-width: 641px) and (max-width: 768px) {
 
+	.logo {
+		padding: 0 20px;
+		margin: 0 60px;
+	}
 
-/*width at 640px and below*/
+	nav {
+		margin: 0 20px;
+	}
+
+	.auth-image {
+		/*width: 200px;*/
+		/*float: left;*/
+		}
+
+	.topline {
+		/*padding-left: 85px;
+		padding-right: 85px;
+		top: 0;*/
+	}
+	.sidebar {
+		/*clear: both;*/
+		/*max-width: 100%;*/
+   	}
+   	.work {
+   		left: 45px;
+   	}
+
+}
+/*width at 640px and below
 /*make position of header static*/
+@media only screen and (min-width: 640px) {
+	.topline{
+		visibility: none;
+	}
+
+	a .logo {
+		max-width: 640px;
+		margin: 0 auto;
+	}
+
+	}
+
+}
+
